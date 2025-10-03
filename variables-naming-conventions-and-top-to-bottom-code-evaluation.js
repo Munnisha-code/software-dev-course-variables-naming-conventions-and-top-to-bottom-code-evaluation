@@ -24,9 +24,17 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+// Original
+let a = 5;
+let b = 10;
+let c = a + b;
 
-console.log(d);
+// Refactored
+let numberOfApples = 5;
+let numberOfOranges = 10;
+let totalFruits = numberOfApples + numberOfOranges;
+
+// New variable
+let numberOfBananas = 7; 
+let totalFruitsIncludingBananas = totalFruits + numberOfBananas; 
+console.log(totalFruitsIncludingBananas); 
